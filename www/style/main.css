@@ -1,0 +1,130 @@
+html,body,div,h1,h2,h3,h4,h5,h6,p,span{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+body{
+	padding-top: 10px;
+	overflow: auto;
+}
+
+
+.chat-container{
+	position: relative;
+}
+
+.banner{
+	border: 1px solid black;
+	height: 80px;
+
+}
+
+.historyMsg{
+	border: 1px solid black;
+	height: 400px;
+	padding: 5px;
+	position: relative;
+	overflow: auto;
+}
+
+.newMsg{
+	text-align: left;
+	margin-top: 5px;
+}
+
+.nickname{
+	font-weight: bold;
+}
+
+.timespan{
+	color: #ddd;
+}
+
+.myMsg{
+	text-align: right;
+	margin-top: 5px;
+}
+
+/*系统消息*/
+.system{
+	text-align: center;
+	background-color: grey;
+	color: white;
+	border-radius: 5px;
+	opacity: 0.6;
+	margin: 5px 10px;
+}
+
+.control{
+	border: 1px solid black;
+	height: 115px;
+}
+
+.control-row{
+	margin-top: 10px;
+}
+
+.inputMsg{
+	height: 50px !important;
+	resize: none;
+}
+
+.sendBtn{
+	height: 50px;
+}
+
+footer{
+	text-align: center;
+}
+
+.loginWrapper{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	display: block;
+	background-color: rgba(5,5,5,0.5);
+	padding-top: 200px;
+}
+
+.info{
+	color: white;
+	font-size: 20px;
+}
+
+.nickWrapper{
+	display: none;
+}
+
+/* Tablets: 768px */
+@media screen and (max-width: 760px){
+
+	.historyMsg{
+		font-size: 10px;
+		border: 0px;
+		height: 330px;
+		padding: 5px;
+		position: relative;
+		overflow: auto;
+	}
+
+	.banner{
+		border: 0px;
+		border-bottom: 1px solid gray;
+	}
+
+	.inputMsg{
+		margin-bottom: 2px;
+	}
+
+	.control{
+		border: 0px;
+	}
+
+	footer{
+		font-size: 15px;
+	}
+}
